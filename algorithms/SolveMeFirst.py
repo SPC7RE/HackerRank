@@ -1,5 +1,5 @@
 #!/bin/python3
-# https://www.hackerrank.com/challenges/solve-me-first/submissions/code/81909549
+# https://www.hackerrank.com/challenges/solve-me-first/problem
 
 def solveMeFirst(a,b):
 	# Hint: Type return a+b below
