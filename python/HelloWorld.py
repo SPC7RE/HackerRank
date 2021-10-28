@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/env python3
 # https://www.hackerrank.com/challenges/py-hello-world/problem
 
 def helloWorld():
