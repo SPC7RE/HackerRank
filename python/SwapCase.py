@@ -6,13 +6,13 @@ def swap_case(s):
     new_string = ''
     for i in s:
         if i.islower() == True:
-            new_string+=(i.upper())
+            new_string += (i.upper())
         elif i.isupper() == True:
-            new_string+=(i.lower())
+            new_string += (i.lower())
         elif i.isspace() == True:
-            new_string+=i
+            new_string += i
         else:
-            new_string+=i
+            new_string += i
     return new_string
   
   
