@@ -3,7 +3,6 @@
 '''
 Finds a substring with bigest count of vowels, 
 with custom length k, from a string.
-Currently max lenght size that can handle is k = 175 
 '''
 
 # from file
@@ -15,22 +14,18 @@ def subString(s, k):
 	vowels = {'a', 'e', 'i', 'o','u'}
 	gen = (s[i:i+k] for i in range(0, len(s)))
 
-	chunks = []
+	longest = ''
+	current = 0
 	for i in gen:
-		chunks.append(i) 
+		counter = sum([i.count(x) for x in vowels])
+		if current < counter:
+			 current = counter
+			 longest = i
 
-	# print(chunks)	
-
-	countVowels = []
-	for i in range(len(chunks)):
-			countVowels.append(sum([chunks[i].count(x) for x in vowels]))
-
-	index = countVowels.index(max(countVowels))
-
-	if max(countVowels) <= 1:
-			return 'Not found!'
+	if len(longest) <= 1:
+		return 'Not found!'
 	else:
-			return chunks[index]
+		return longest
 
 if __name__ == '__main__':
   s = 'ssssssdkkkkkkksssssaaammmmmmmmeeooouuunnnnnnnniiiaaaooouuueee'
