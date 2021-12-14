@@ -10,7 +10,7 @@ Currently max lenght size that can handle is k = 175
 # with open('test.txt', 'r') as f:
 # 	s = f.read()
 
-def vowelCounter(s, k):
+def subString(s, k):
 	# Write your code here
 	vowels = {'a', 'e', 'i', 'o','u'}
 	gen = (s[i:i+k] for i in range(0, len(s)))
@@ -35,4 +35,4 @@ def vowelCounter(s, k):
 if __name__ == '__main__':
   s = 'ssssssdkkkkkkksssssaaammmmmmmmeeooouuunnnnnnnniiiaaaooouuueee'
   k = 16
-  print(vowelCounter(s, k))
+  print(subString(s, k))
