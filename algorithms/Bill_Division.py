@@ -1,4 +1,5 @@
-#!/bin/env python3
+#!/usr/bin/env python3
+# https://www.hackerrank.com/challenges/bon-appetit/problem
 
 import math
 import os
